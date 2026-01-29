@@ -61,3 +61,7 @@
 
 </body>
 </html>
+const loader = new THREE.GLTFLoader();
+loader.load("model.glb", (gltf) => {
+  scene.add(gltf.scene);
+});
